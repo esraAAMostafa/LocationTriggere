@@ -12,6 +12,8 @@
 		0228E9B5228D6E3800C19596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0228E9B3228D6E3800C19596 /* Main.storyboard */; };
 		0228E9B7228D6E3A00C19596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0228E9B6228D6E3A00C19596 /* Assets.xcassets */; };
 		0228E9BA228D6E3A00C19596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0228E9B8228D6E3A00C19596 /* LaunchScreen.storyboard */; };
+		0228E9C2228D6FF900C19596 /* LocationNotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0228E9C1228D6FF900C19596 /* LocationNotificationScheduler.swift */; };
+		025C32F2228D9FF0003C9ED0 /* LocationNotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025C32F1228D9FF0003C9ED0 /* LocationNotificationInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0228E9B6228D6E3A00C19596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0228E9B9228D6E3A00C19596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0228E9BB228D6E3A00C19596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0228E9C1228D6FF900C19596 /* LocationNotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNotificationScheduler.swift; sourceTree = "<group>"; };
+		025C32F1228D9FF0003C9ED0 /* LocationNotificationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNotificationInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				0228E9AF228D6E3800C19596 /* AppDelegate.swift */,
+				025C32F1228D9FF0003C9ED0 /* LocationNotificationInfo.swift */,
+				0228E9C1228D6FF900C19596 /* LocationNotificationScheduler.swift */,
 				0228E9B1228D6E3800C19596 /* ViewController.swift */,
 				0228E9B3228D6E3800C19596 /* Main.storyboard */,
 				0228E9B6228D6E3A00C19596 /* Assets.xcassets */,
@@ -136,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0228E9B2228D6E3800C19596 /* ViewController.swift in Sources */,
+				025C32F2228D9FF0003C9ED0 /* LocationNotificationInfo.swift in Sources */,
 				0228E9B0228D6E3800C19596 /* AppDelegate.swift in Sources */,
+				0228E9C2228D6FF900C19596 /* LocationNotificationScheduler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J7S5F5P6TC;
 				INFOPLIST_FILE = LocationTriggere/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = example.LocationTriggere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J7S5F5P6TC;
 				INFOPLIST_FILE = LocationTriggere/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = example.LocationTriggere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
